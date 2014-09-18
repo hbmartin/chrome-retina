@@ -1,0 +1,39 @@
+html, body { background: #f2f2f2; }
+#main #content #left-stack a.view-in-itunes span, #main #content #left-stack a.view-in-appstore span {
+	color: white;
+	text-indent: 12px !important;
+	background-image: none !important;
+	background-color: #2A94DE !important;
+	border-radius: 17px;
+	padding-top: 5px;
+}
+#main #content #left-stack a.view-in-appstore span {
+	height: 24px !important;
+	width: 124px !important;
+}
+#productheader > h2:after {
+	content: "iTunes Preview";
+}
+#productheader > h2 > img {
+	display: none;
+}
+.fat-binary-badge {
+	display: none !important;
+}
+.rating-star {
+background: none !important;
+}
+.rating-star::after {
+	font-family: "fontello";
+	font-weight: bold;
+}
+.rating-star:not(.half)::after {
+	content: '\e803';
+}
+.rating-star.half::after {
+	content: '\e805';
+}
+.rating-count {
+line-height: 22px;
+margin-left: 9px;
+}

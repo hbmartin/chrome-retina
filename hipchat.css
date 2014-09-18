@@ -1,0 +1,117 @@
+.logo {
+height: 58px;
+display: block;
+text-decoration: none;
+font-size: 46px;
+padding-left: 13px;
+}
+.logo > img {
+display: none;
+}
+.logo:before { font-family: fontello; content: '\e802'; color: #b1b3b6; text-decoration: none; }
+body.chat .available:before {
+content: "●";
+color: #46B75A;
+margin-right: 5px;
+font-size: 19px;
+line-height: 14px;
+vertical-align: -1px;
+}
+body.chat .available {
+background: none !important;
+margin-left: -20px !important;
+}
+body.chat .unavailable:before, body.chat > .idle:before {
+content: "●";
+color: #ADADAD;
+margin-right: 5px;
+font-size: 19px;
+line-height: 14px;
+vertical-align: -1px;
+}
+body.chat .unavailable, body.chat > .idle {
+background: none !important;
+margin-left: -20px !important;
+}
+body.chat .away:before {
+  font-size: 12px;
+  line-height: 12px;
+  vertical-align: 1px;
+  margin-right: 4px;
+	content: "▲";
+	color: #F7AC56;
+}
+body.chat .away {
+	background: none !important;
+	margin-left: -20px !important;
+}
+body.chat li.selected .away::before, body.chat #roster .away::before  {
+font-weight: normal;
+}
+body.chat .iphone:before, body.chat .android:before {
+font-family: "fontello";
+margin-right: 4px;
+font-size: 18px;
+line-height: 13px;
+vertical-align: -1px;
+content: '\e806';
+color: rgb(43, 43, 43);
+}
+body.chat .iphone, body.chat .android {
+background: none !important;
+margin-left: -20px !important;
+}
+body.chat .public:before {
+font-family: "fontello";
+margin-right: 4px;
+font-size: 18px;
+line-height: 13px;
+vertical-align: -1px;
+content: '\e807';
+color: rgb(173, 173, 173);
+}
+body.chat .public {
+background: none !important;
+margin-left: -20px !important;
+}
+body.chat li[jid*=mobile] .public:before {
+color: #9C30CA;
+content: "M";
+font-family: "helvetica";
+font-weight: bold;
+}
+body.chat li[jid*=green] .public:before {
+color: #46B75A;
+}
+#action_tabs {
+	display: none;
+}
+#search_button > img { display: none;}
+#search_button:after {
+font-family: "fontello";
+content: '\e809';
+font-size: 14px;
+line-height: 12px;
+}
+.close > img {
+	visibility: hidden;
+}
+.close::before {
+content: '×';
+padding: 1px 4px 2px;
+vertical-align: 1px;
+font-size: 10px;
+margin-left: -8px;
+border-radius: 10px;
+}
+.close:hover::before{
+	background: #333;
+}
+.selected .close:hover::before{
+	background: #bbb;
+}
+.open, #tab_lobby > a {
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+}
+

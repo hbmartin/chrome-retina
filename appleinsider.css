@@ -1,0 +1,15 @@
+#wordmark, #leaderboard, #top-promo, #nrelate_related_placeholder, .rel-half-r-cnt-ad, #sbr-priceguide { display: none; }
+body, #sbr-latesthl, #sbr-forumtopics { background: none !important; }
+#google_ads_div_AI_MREC_ad_wrapper {
+display: none;
+}
+#article-social-head {
+height: 1px;
+overflow: hidden;
+}
+iframe {
+display: none;
+}
+ins {
+display: none !important;
+}
